@@ -1,17 +1,30 @@
 import tkinter as tk
+from PIL import Image, ImageTk
 
 # Create a Tkinter window
 root = tk.Tk()
 root.title("Image Display Example")
 
-# Load the image file
-# Note: You can use only GIF, PGM, or PPM formats with PhotoImage
-image_path = "/home/bright/Downloads/ZTo1tdex.jpg"
-image = tk.PhotoImage(file=image_path)
+# Use the provided absolute path for the image file
+image_path = "/home/bright/Downloads/illia-horokhovsky-1aWfiZOq0zg-unsplash.jpg"
 
-# Create a label widget to display the image
-label = tk.Label(root, image=image)
-label.pack()
+try:
+    # Open the image file using Pillow
+    image_pil = Image.open(image_path)
+
+    # Convert the Pillow image to a Tkinter-compatible format
+    image_tk = ImageTk.PhotoImage(image_pil)
+
+    # Create a label widget to display the image
+    label = tk.Label(root, image=image_tk)
+    label.pack()
+
+    # Keep a reference to the image to prevent it from being garbage collected
+    label.image = image_tk
+
+except Exception as e:
+    # Handle the error if the image couldn't be loaded
+    print("Error:", e)
 
 # Run the Tkinter event loop
 root.mainloop()
