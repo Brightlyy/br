@@ -1,0 +1,47 @@
+    <Button-1>: Triggered when the left mouse button is clicked.
+        Use: Bind a function to handle left-click events.
+
+    <Button-2>: Triggered when the middle mouse button is clicked.
+        Use: Bind a function to handle middle-click events.
+
+    <Button-3>: Triggered when the right mouse button is clicked.
+        Use: Bind a function to handle right-click events.
+
+    <Double-Button-1>: Triggered when the left mouse button is double-clicked.
+        Use: Bind a function to handle double-click events.
+
+    <Double-Button-2>: Triggered when the middle mouse button is double-clicked.
+        Use: Bind a function to handle middle double-click events.
+
+    <Double-Button-3>: Triggered when the right mouse button is double-clicked.
+        Use: Bind a function to handle right double-click events.
+
+    <Motion>: Triggered when the mouse pointer moves over the canvas.
+        Use: Bind a function to handle mouse motion events.
+
+    <B1-Motion>: Triggered when the left mouse button is pressed and dragged.
+        Use: Bind a function to handle left mouse button dragging events.
+
+    <B2-Motion>: Triggered when the middle mouse button is pressed and dragged.
+        Use: Bind a function to handle middle mouse button dragging events.
+
+    <B3-Motion>: Triggered when the right mouse button is pressed and dragged.
+        Use: Bind a function to handle right mouse button dragging events.
+
+    <Enter>: Triggered when the mouse pointer enters the canvas.
+        Use: Bind a function to handle mouse enter events.
+
+    <Leave>: Triggered when the mouse pointer leaves the canvas.
+        Use: Bind a function to handle mouse leave events.
+
+    <MouseWheel>: Triggered when the mouse wheel is scrolled.
+        Use: Bind a function to handle mouse wheel scrolling events.
+
+    <ButtonRelease-1>: Triggered when the left mouse button is released after being pressed.
+        Use: Bind a function to handle left mouse button release events.
+
+    <ButtonRelease-2>: Triggered when the middle mouse button is released after being pressed.
+        Use: Bind a function to handle middle mouse button release events.
+
+    <ButtonRelease-3>: Triggered when the right mouse button is released after being pressed.
+        Use: Bind a function to handle right mouse button release events.
